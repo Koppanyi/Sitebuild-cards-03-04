@@ -1,0 +1,130 @@
+/* ——————————————————— CSS Reset ——————————————————— */
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+/* —————————————————————————————————————————————— */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary);
+}
+
+:root {  
+    --primary: #eae9e4;
+    --secondary: #1c1717;       
+}
+
+.sub {
+    font-size: 18px;
+    letter-spacing: .2em;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    border-bottom: 1px solid grey;
+    font-size: 12px;
+    letter-spacing: .2em;
+    color: var(--primary);
+    background-color: var(--secondary); 
+    z-index: 50;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;     
+
+    max-width: 1280px;
+    padding-top: 80px;
+}
+
+.card {
+
+    width: 400px;
+    height: 300px;
+    margin: 20px 10px;  /* függ/vizsz GAP */
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+}
+
+.title-container {
+    width: 100%;
+    height: 218px;
+    padding: 40px 40px 0 40px;
+}
+
+.price-bttn {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--primary);
+    background-color: var(--secondary);
+
+}
+
+.button-container {    /* (container) */
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: var(--secondary);
+    background-color: var(--primary); 
+    cursor: pointer;
+}
+
+.visit {
+    font-size: 14px;
+}
+
+/* .arrow {
+    font-size: 18px;
+}
+ */
+
+.button-container:hover {
+    border-bottom: 1px solid grey;
+}
+
+/* Material Icon class-a: */
+
+.menu { font-size: 24px; }
+
+.md-18 {
+    font-size: 18px;
+    color: var(--secondary);;
+}
+
