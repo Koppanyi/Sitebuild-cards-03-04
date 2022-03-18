@@ -58,14 +58,13 @@ function loadEvent() {
                 <p class="sub">${item.sub}</p>
                 <p class="title">${item.title}</p>
             </div>
-            <div class="price-bttn">
-                <div class="text">${item.text}</div>
+            <div class="text">${item.text}</div>
 
-                <div class="button-container">
-                    <div class="visit">Visit</div>
-                    <div class="arrow"> <i class="material-icons md-18">arrow_forward</i></div>
-                </div>
-            </div> 
+            <div class="button-container">
+                <p class="visit">Visit</p>
+                <div class="arrow"> <i class="material-icons md-18">arrow_forward</i></div>
+            </div>
+        </div> 
     `).join("");
   container.insertAdjacentHTML("afterbegin", cards );
 
